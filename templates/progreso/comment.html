@@ -2,6 +2,9 @@
 
 {% block content %}
 
+
+
+
     {% for comentario in comentarios %}
 
     <section class="page-section clearfix">
@@ -25,6 +28,15 @@
 
 </div>    
     {% endfor %}
+    <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'forms' %}">comentarios</a>
+    
 
-    <input type="button" value="Dejar comentario">
+      {% if 'valido' in request.GET %}
+
+<script>
+  window.alert('Muchas gracias por tu comentario');
+</script>
+
+{% endif %}
 {% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'cv/base.html'%}
+
+
+
+{% block content %}
+
+
+
+<div class="container" id="formsuser">
+    <form action="" method="POST" style="text-align: center;">
+        {% csrf_token %}
+    <table style="color:white;">{{formulario.as_table}}</table>
+    <button type="submit" style="color: rgb(247, 247, 247); background-color: black;" class="btn btn-lg btn-primary">Enviar</button>
+    <<button type="reset" style="color: rgb(247, 247, 247); background-color: black;" class="btn btn-lg btn-primary">Borrar</button>
+</form>
+</div>
+
+
+{% endblock %}
