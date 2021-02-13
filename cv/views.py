@@ -15,6 +15,11 @@ def vitae(request):
     return render(request, 'cv/vitae.html')
 
 
+def contact(request):
+
+    return render(request, 'cv/contacto.html')
+
+
 
 
 

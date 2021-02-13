@@ -1,0 +1,28 @@
+{% extends 'cv/base.html' %}
+
+
+
+{% block content %}
+
+    {% for trabajo in trabajos %}
+
+    <section class="page-section clearfix">
+        <div class="container">
+          <div class="intro" style="text-align: center;">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{trabajo.img.url}}" width="50%">
+           
+              <h2 class="section-heading mb-4" >
+                <span class="section-heading-lower" style="color: white;">{{trabajo.title}}</span>
+                <span class="section-heading-upper" style="color: rgb(203, 206, 43);">{{trabajo.description}}</span>
+              </h2> 
+            
+          </div>
+        </div>
+      </section>
+
+    
+
+    {% endfor %}
+
+
+{% endblock %}

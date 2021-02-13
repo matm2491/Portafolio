@@ -4,9 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-
-    path('comentarios', views.comment, name = 'comment'),
-    path('formulario', views.forms_user, name = 'forms'),
+    
+    path('work', views.work, name= 'work'),
     
 ]
 

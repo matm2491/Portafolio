@@ -2,8 +2,11 @@
 
 {% block content %}
 
-
-
+<br>
+<center>
+  <li class="nav-item px-lg-4">
+    <button style="color: rgb(247, 247, 247); background-color: black;" class="btn btn-lg btn-primary"><a class="nav-link text-uppercase text-expanded" href="{% url 'forms' %}">Deja tu comentario</a></button>
+  </center>
 
     {% for comentario in comentarios %}
 
@@ -28,9 +31,10 @@
 
 </div>    
     {% endfor %}
+    <center>
     <li class="nav-item px-lg-4">
-      <a class="nav-link text-uppercase text-expanded" href="{% url 'forms' %}">comentarios</a>
-    
+      <button style="color: rgb(247, 247, 247); background-color: black;" class="btn btn-lg btn-primary"><a class="nav-link text-uppercase text-expanded" href="{% url 'forms' %}">Deja tu comentario</a></button>
+    </center>
 
       {% if 'valido' in request.GET %}
 
